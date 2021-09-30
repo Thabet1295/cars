@@ -1,0 +1,186 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'tagwal';
+}
+@font-face {
+    font-family: 'tagwal';
+    src: url('../fonts/Tajawal-Bold.ttf');
+}
+ 
+.top-header
+    { 
+        .sign-in
+        {
+            i {
+                margin: 0px 5px;
+         }
+        }
+    
+    }
+
+
+.ml-auto, .mx-auto {
+    margin-inline-start: auto;
+}
+
+ 
+.btn-3
+{
+    margin: 0px 10px;
+}
+.car-box-3 {
+    .facilities-list {
+        li {
+            i{
+                padding-inline-end: 10px;
+            }
+        }
+    }
+}
+html[dir=rtl]{
+    .list-inline {
+        a{
+            margin-left: 15px;
+            i {
+                margin-left: 5px;
+            }
+     }
+    }
+    .slick-slider 
+    {
+        .slick-slide
+        {
+            direction: rtl;
+            text-align: right;
+        }
+    }
+    footer {
+        text-align: right;
+        .footer-inner{
+            .text {
+                margin-inline-end: 30px;
+                margin-right: unset;
+            }
+        }
+    }
+    .car-box-3{
+        text-align: right;
+        .facilities-list {
+            li{
+                float: right;
+                margin-left: 20px;
+                margin-right: 0px;
+                i{
+                    float: right;
+                }
+            }
+        }
+    }
+    .single-info 
+    {
+        text-align: right;
+    }
+    .contact-2 {
+        .ci-box {
+            .icon{
+                left: 0px;
+            }
+           .detail {
+                margin-left: 50px;
+                text-align: right;
+            }
+        }
+    }
+    .sorting-options2 {
+        float: right;
+    }
+    .widget 
+    {
+        text-align: right;
+    }
+    .car-thumbnail:before 
+    {
+        right: 0;
+        left: unset;
+    }
+    .car-box-2 {
+        .detail{
+            text-align: right;
+        }
+        .facilities-list {
+            li {
+                i {
+                     float: right;
+                    padding-inline-end: 5px;
+                }
+            }
+        }
+    }
+    .posts-by-category {
+        ul {
+            text-align: right;
+        }
+    }
+    .media-body  
+    {
+        margin-inline-start: 10px;
+    }
+    .tabbing-box {
+        .tab-pane {
+            text-align: right;
+        }
+    }
+    .heading-2,.heading-4
+    {
+        text-align: right;
+    }
+    .shop-table.cart {
+        td ,th{
+            text-align: right;
+        }
+    }
+    .contact-section {
+        .form-section {
+            direction: rtl;
+            text-align: right
+     
+        }
+    }
+    .main-header {
+        .dropdown-menu {
+            a{
+                text-align: right;
+            }
+        }
+    }
+    .navbar-light {
+        .navbar-nav {
+            .nav-link.active{
+                color: #f00 !important;
+            }
+        }
+    }
+    .payment-box {
+        margin-inline-start: 20px;
+        text-align: right;
+        .form-check-input
+        {
+            right: 10px;
+        }
+    }
+    .cart-total-box {
+        h5{
+            text-align: right;
+        }
+    }
+    .cart-total-box {
+        ul {
+            li{
+                text-align: right;
+            }
+        }
+    }
+}

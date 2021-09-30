@@ -1,0 +1,124 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "tagwal";
+}
+
+@font-face {
+  font-family: "tagwal";
+  src: url("../fonts/Tajawal-Bold.ttf");
+}
+.top-header .sign-in i {
+  margin: 0px 5px;
+}
+
+.ml-auto, .mx-auto {
+  margin-inline-start: auto;
+}
+
+.btn-3 {
+  margin: 0px 10px;
+}
+
+.car-box-3 .facilities-list li i {
+  padding-inline-end: 10px;
+}
+
+html[dir=rtl] .list-inline a {
+  margin-left: 15px;
+}
+html[dir=rtl] .list-inline a i {
+  margin-left: 5px;
+}
+html[dir=rtl] .slick-slider .slick-slide {
+  direction: rtl;
+  text-align: right;
+}
+html[dir=rtl] footer {
+  text-align: right;
+}
+html[dir=rtl] footer .footer-inner .text {
+  margin-inline-end: 30px;
+  margin-right: unset;
+}
+html[dir=rtl] .car-box-3 {
+  text-align: right;
+}
+html[dir=rtl] .car-box-3 .facilities-list li {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+html[dir=rtl] .car-box-3 .facilities-list li i {
+  float: right;
+}
+html[dir=rtl] .single-info {
+  text-align: right;
+}
+html[dir=rtl] .contact-2 .ci-box .icon {
+  left: 0px;
+}
+html[dir=rtl] .contact-2 .ci-box .detail {
+  margin-left: 50px;
+  text-align: right;
+}
+html[dir=rtl] .sorting-options2 {
+  float: right;
+}
+html[dir=rtl] .widget {
+  text-align: right;
+}
+html[dir=rtl] .car-thumbnail:before {
+  right: 0;
+  left: unset;
+}
+html[dir=rtl] .car-box-2 .detail {
+  text-align: right;
+}
+html[dir=rtl] .car-box-2 .facilities-list li i {
+  float: right;
+  padding-inline-end: 5px;
+}
+html[dir=rtl] .posts-by-category ul {
+  text-align: right;
+}
+html[dir=rtl] .media-body {
+  margin-inline-start: 10px;
+}
+html[dir=rtl] .tabbing-box .tab-pane {
+  text-align: right;
+}
+html[dir=rtl] .heading-2, html[dir=rtl] .heading-4 {
+  text-align: right;
+}
+html[dir=rtl] .shop-table.cart td, html[dir=rtl] .shop-table.cart th {
+  text-align: right;
+}
+html[dir=rtl] .contact-section .form-section {
+  direction: rtl;
+  text-align: right;
+}
+html[dir=rtl] .main-header .dropdown-menu a {
+  text-align: right;
+}
+html[dir=rtl] .navbar-light .navbar-nav .nav-link.active {
+  color: #f00 !important;
+}
+html[dir=rtl] .payment-box {
+  margin-inline-start: 20px;
+  text-align: right;
+}
+html[dir=rtl] .payment-box .form-check-input {
+  right: 10px;
+}
+html[dir=rtl] .cart-total-box h5 {
+  text-align: right;
+}
+html[dir=rtl] .cart-total-box ul li {
+  text-align: right;
+}
+
+/*# sourceMappingURL=custom.css.map */

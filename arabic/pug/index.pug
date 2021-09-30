@@ -1,0 +1,1004 @@
+doctype html
+html(lang="ar" dir="rtl")
+    head
+        block website_title
+            title alsumood4cars
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(charset="utf-8")
+        include ./include/style
+    body
+        div(class="page_loader")
+        include ./include/header
+        block index 
+            #banner(class="banner")
+                #bannerCarousole(class="carousel slide", data-ride="carousel")
+                    div(class="carousel-inner banner-slider-inner text-center")
+                        div(class="carousel-item banner-max-height active item-bg")
+                            img(class="d-block w-100 h-100", src="../assets/img/banner/img-4.jpg", alt="banner")
+                            div(class="carousel-content container banner-info-2 bi-2")
+                                h2 معنا لايجاد سياراتك المفضلة
+                                p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                a(class="btn-3 btn-defaults", href="#")
+                                    | ابدا الان
+                                    i(class="arrow")
+                                a(class="btn-4", href="#")
+                                    span لمعرفة المزيد
+                                    i(class="arrow")
+                        div(class="carousel-item banner-max-height item-bg")
+                            img(class="d-block w-100 h-100", src="../assets/img/banner/img-3.jpg", alt="banner")
+                            div(class="carousel-content container banner-info-2 bi-2 text-l")
+                                h2 Welcome to Auto Car
+                                p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                a(class="btn-3 btn-defaults", href="#")
+                                    | ابدا الان
+                                    i(class="arrow")
+                                a(class="btn-4", href="#")
+                                    span لمعرفة المزيد
+                                    i(class="arrow")
+                        div(class="carousel-item banner-max-height item-bg")
+                            img(class="d-block w-100 h-100", src="../assets/img/banner/img-2.jpg", alt="banner")
+                            div(class="carousel-content container banner-info-2 bi-2 text-r")
+                                h2 Best place for sell car!
+                                p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                a(class="btn-3 btn-defaults", href="#")
+                                    | ابدا الان
+                                    i(class="arrow")
+                                a(class="btn-4", href="#")
+                                    span لمعرفة المزيد
+                                    i(class="arrow")
+                    a(class="carousel-control-prev none-580", href="#bannerCarousole", role="button", data-slide="prev")
+                        span(class="slider-mover-left", aria-hidden="true")
+                            i(class="fa fa-angle-left")
+                    a(class="carousel-control-next none-580", href="#bannerCarousole", role="button", data-slide="next")
+                        span(class="slider-mover-right", aria-hidden="true")
+                            i(class="fa fa-angle-right")
+            div(class="search-box-2")
+                div(class="container")
+                    div(class="row")
+                        div(class="col-lg-12")
+                            div(class="inline-search-area")
+                                div(class="row row-3")
+                                    div(class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 search-col")
+                                        select(class="selectpicker search-fields", name="select-brand")
+                                            option  النوع
+                                            option Audi
+                                            option BMW
+                                            option Honda
+                                            option Nissan
+                                    div(class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 search-col")
+                                        select(class="selectpicker search-fields", name="select-make")
+                                            option المصنع
+                                            option BMW
+                                            option Honda
+                                            option Lamborghini
+                                            option رياضية Car
+                                    div(class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 search-col")
+                                        select(class="selectpicker search-fields", name="select-location")
+                                            option المقر
+                                            option United States
+                                            option United Kingdom
+                                    div(class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 search-col")
+                                        select(class="selectpicker search-fields", name="select-year")
+                                            option السنة
+                                            option 2016
+                                            option 2017
+                                            option 2018
+                                            option 2019
+                                    div(class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 search-col")
+                                        select(class="selectpicker search-fields", name="select-type")
+                                            option نوع السيارة
+                                            option جديد Car
+                                            option Used Car
+                                    div(class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 search-col")
+                                        button(class="btn white-btn btn-search btn-block")
+                                            i(class="fa fa-search")
+                                            strong بحث
+            div(class="مفضلة-car content-area")
+                div(class="container")
+                    // Main title
+                    div(class="main-title")
+                        h1 الاعلي مبيعا 
+                        p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                    div(class="row")
+                        div(class="col-lg-4 col-md-6")
+                            div(class="car-box-3")
+                                div(class="car-thumbnail")
+                                    a(href="car-details.html", class="car-img")
+                                        div(class="for") For Sale
+                                        div(class="price-box")
+                                            span(class="del")
+                                                del ريال 950.00
+                                            br
+                                            span ريال 1050.00
+                                        img(class="d-block w-100", src="../assets/img/car/car-1.jpg", alt="car")
+                                    div(class="carbox-overlap-wrapper")
+                                        div(class="overlap-box")
+                                            div(class="overlap-btns-area")
+                                                a(class="overlap-btn", data-toggle="modal", data-target="#carOverviewModal")
+                                                    i(class="fa fa-eye-slash")
+                                                a(class="overlap-btn wishlist-btn")
+                                                    i(class="fa fa-heart-o")
+                                                a(class="overlap-btn compare-btn")
+                                                    i(class="fa fa-balance-scale")
+                                                div(class="car-magnify-gallery")
+                                                    a(href="../assets/img/car/car-1.jpg", class="overlap-btn", data-sub-html="<h4>Lamborghini</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        i(class="fa fa-expand")
+                                                        img(class="hidden", src="../assets/img/car/car-1.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-2.jpg", class="hidden", data-sub-html="<h4>Ferrari Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-2.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-3.jpg", class="hidden", data-sub-html="<h4>Bmw e46 m3 Diski Serie</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-3.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-4.jpg", class="hidden", data-sub-html="<h4>Volkswagen Scirocco 2016</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-4.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-5.jpg", class="hidden", data-sub-html="<h4>Porsche Cayen Last</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-5.jpg", alt="hidden-img")
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="car-details.html") Lamborghini
+                                    ul(class="custom-list")
+                                        li
+                                            a(href="#") جديدة
+                                            | /
+                                        li
+                                            a(href="#") اوتوماتيك
+                                            | /
+                                        li
+                                            a(href="#") رياضية
+                                    ul(class="facilities-list clearfix")
+                                        li
+                                            i(class="flaticon-fuel")
+                                            | بترول
+                                        li
+                                            i(class="flaticon-way")
+                                            | 4,000 km
+                                        li
+                                            i(class="flaticon-manual-transmission")
+                                            | يدوي
+                                        li
+                                            i(class="flaticon-car")
+                                            | رياضية
+                                        li
+                                            i(class="flaticon-gear")
+                                            | ازرق
+                                        li
+                                            i(class="flaticon-calendar-1")
+                                            | 2019
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 مراجعات)
+                                    ul(class="pull-right icon")
+                                        li
+                                            a(href="#")
+                                                i(class="fa fa-heart-o")
+                                        li
+                                            a(href="#")
+                                                i(class="fa fa-share-square-o")
+                        div(class="col-lg-4 col-md-6")
+                            div(class="car-box-3")
+                                div(class="car-thumbnail")
+                                    a(href="car-details.html", class="car-img")
+                                        div(class="tag-2 bg-active") مفضلة
+                                        div(class="price-box")
+                                            span(class="del")
+                                                del ريال 805.00
+                                            br
+                                            span ريال 780.00
+                                        img(class="d-block w-100", src="../assets/img/car/car-2.jpg", alt="car")
+                                    div(class="carbox-overlap-wrapper")
+                                        div(class="overlap-box")
+                                            div(class="overlap-btns-area")
+                                                a(class="overlap-btn", data-toggle="modal", data-target="#carOverviewModal")
+                                                    i(class="fa fa-eye-slash")
+                                                a(class="overlap-btn wishlist-btn")
+                                                    i(class="fa fa-heart-o")
+                                                a(class="overlap-btn compare-btn")
+                                                    i(class="fa fa-balance-scale")
+                                                div(class="car-magnify-gallery")
+                                                    a(href="../assets/img/car/car-2.jpg", class="overlap-btn", data-sub-html="<h4>Ferrari Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        i(class="fa fa-expand")
+                                                        img(class="hidden", src="../assets/img/car/car-2.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-1.jpg", class="hidden", data-sub-html="<h4>Ferrari Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-1.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-3.jpg", class="hidden", data-sub-html="<h4>Bmw e46 m3 Diski Serie</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-3.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-4.jpg", class="hidden", data-sub-html="<h4>Volkswagen Scirocco 2016</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-4.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-5.jpg", class="hidden", data-sub-html="<h4>Porsche Cayen Last</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-5.jpg", alt="hidden-img")
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="car-details.html") Ferrari Red Car
+                                    ul(class="custom-list")
+                                        li
+                                            a(href="#") جديدة
+                                            | /
+                                        li
+                                            a(href="#") اوتوماتيك
+                                            | /
+                                        li
+                                            a(href="#") رياضية
+                                    ul(class="facilities-list clearfix")
+                                        li
+                                            i(class="flaticon-fuel")
+                                            | بترول
+                                        li
+                                            i(class="flaticon-way")
+                                            | 4,000 km
+                                        li
+                                            i(class="flaticon-manual-transmission")
+                                            | يدوي
+                                        li
+                                            i(class="flaticon-car")
+                                            | رياضية
+                                        li
+                                            i(class="flaticon-gear")
+                                            | ازرق
+                                        li
+                                            i(class="flaticon-calendar-1")
+                                            | 2019
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 مراجعات)
+                                    ul(class="pull-right icon")
+                                        li
+                                            a(href="#")
+                                                i(class="fa fa-heart-o")
+                                        li
+                                            a(href="#")
+                                                i(class="fa fa-share-square-o")
+                        div(class="col-lg-4 col-md-6")
+                            div(class="car-box-3")
+                                div(class="car-thumbnail")
+                                    a(href="car-details.html", class="car-img")
+                                        div(class="for") For Rent
+                                        div(class="price-box")
+                                            span(class="del")
+                                                del ريال 830.00
+                                            br
+                                            span ريال 940.00
+                                        img(class="d-block w-100", src="../assets/img/car/car-3.jpg", alt="car")
+                                    div(class="carbox-overlap-wrapper")
+                                        div(class="overlap-box")
+                                            div(class="overlap-btns-area")
+                                                a(class="overlap-btn", data-toggle="modal", data-target="#carOverviewModal")
+                                                    i(class="fa fa-eye-slash")
+                                                a(class="overlap-btn wishlist-btn")
+                                                    i(class="fa fa-heart-o")
+                                                a(class="overlap-btn compare-btn")
+                                                    i(class="fa fa-balance-scale")
+                                                div(class="car-magnify-gallery")
+                                                    a(href="../assets/img/car/car-3.jpg", class="overlap-btn", data-sub-html="<h4>Bmw e46 m3 Diski Serie</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        i(class="fa fa-expand")
+                                                        img(class="hidden", src="../assets/img/car/car-3.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-2.jpg", class="hidden", data-sub-html="<h4>Ferrari Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-2.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-1.jpg", class="hidden", data-sub-html="<h4>Lamborghini</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-1.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-4.jpg", class="hidden", data-sub-html="<h4>Volkswagen Scirocco 2016</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-4.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-5.jpg", class="hidden", data-sub-html="<h4>Porsche Cayen Last</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-5.jpg", alt="hidden-img")
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="car-details.html") Bmw e46 m3 Diski Serie
+                                    ul(class="custom-list")
+                                        li
+                                            a(href="#") جديدة
+                                            | /
+                                        li
+                                            a(href="#") اوتوماتيك
+                                            | /
+                                        li
+                                            a(href="#") رياضية
+                                    ul(class="facilities-list clearfix")
+                                        li
+                                            i(class="flaticon-fuel")
+                                            | بترول
+                                        li
+                                            i(class="flaticon-way")
+                                            | 4,000 km
+                                        li
+                                            i(class="flaticon-manual-transmission")
+                                            | يدوي
+                                        li
+                                            i(class="flaticon-car")
+                                            | رياضية
+                                        li
+                                            i(class="flaticon-gear")
+                                            | ازرق
+                                        li
+                                            i(class="flaticon-calendar-1")
+                                            | 2019
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 مراجعات)
+                                    ul(class="pull-right icon")
+                                        li
+                                            a(href="#")
+                                                i(class="fa fa-heart-o")
+                                        li
+                                            a(href="#")
+                                                i(class="fa fa-share-square-o")
+                        div(class="col-lg-4 col-md-6")
+                            div(class="car-box-3")
+                                div(class="car-thumbnail")
+                                    a(href="car-details.html", class="car-img")
+                                        div(class="tag-2 bg-active") مفضلة
+                                        div(class="price-box")
+                                            span(class="del")
+                                                del ريال 950.00
+                                            br
+                                            span ريال 1050.00
+                                        img(class="d-block w-100", src="../assets/img/car/car-4.jpg", alt="car")
+                                    div(class="carbox-overlap-wrapper")
+                                        div(class="overlap-box")
+                                            div(class="overlap-btns-area")
+                                                a(class="overlap-btn", data-toggle="modal", data-target="#carOverviewModal")
+                                                    i(class="fa fa-eye-slash")
+                                                a(class="overlap-btn wishlist-btn")
+                                                    i(class="fa fa-heart-o")
+                                                a(class="overlap-btn compare-btn")
+                                                    i(class="fa fa-balance-scale")
+                                                div(class="car-magnify-gallery")
+                                                    a(href="../assets/img/car/car-4.jpg", class="overlap-btn", data-sub-html="<h4>Volkswagen Scirocco 2016</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        i(class="fa fa-expand")
+                                                        img(class="hidden", src="../assets/img/car/car-4.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-2.jpg", class="hidden", data-sub-html="<h4>Ferrari Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-2.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-3.jpg", class="hidden", data-sub-html="<h4>Bmw e46 m3 Diski Serie</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-3.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-1.jpg", class="hidden", data-sub-html="<h4>Lamborghini</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-1.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-5.jpg", class="hidden", data-sub-html="<h4>Porsche Cayen Last</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-5.jpg", alt="hidden-img")
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="car-details.html") Volkswagen Scirocco 2016
+                                    ul(class="custom-list")
+                                        li
+                                            a(href="#") جديدة
+                                            | /
+                                        li
+                                            a(href="#") اوتوماتيك
+                                            | /
+                                        li
+                                            a(href="#") رياضية
+                                    ul(class="facilities-list clearfix")
+                                        li
+                                            i(class="flaticon-fuel")
+                                            | بترول
+                                        li
+                                            i(class="flaticon-way")
+                                            | 4,000 km
+                                        li
+                                            i(class="flaticon-manual-transmission")
+                                            | يدوي
+                                        li
+                                            i(class="flaticon-car")
+                                            | رياضية
+                                        li
+                                            i(class="flaticon-gear")
+                                            | ازرق
+                                        li
+                                            i(class="flaticon-calendar-1")
+                                            | 2019
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 مراجعات)
+                                    ul(class="pull-right icon")
+                                        li
+                                            a(href="#")
+                                                i(class="fa fa-heart-o")
+                                        li
+                                            a(href="#")
+                                                i(class="fa fa-share-square-o")
+                        div(class="col-lg-4 col-md-6")
+                            div(class="car-box-3")
+                                div(class="car-thumbnail")
+                                    a(href="car-details.html", class="car-img")
+                                        div(class="for") For Sale
+                                        div(class="price-box")
+                                            span(class="del")
+                                                del ريال 805.00
+                                            br
+                                            span ريال 780.00
+                                        img(class="d-block w-100", src="../assets/img/car/car-5.jpg", alt="car")
+                                    div(class="carbox-overlap-wrapper")
+                                        div(class="overlap-box")
+                                            div(class="overlap-btns-area")
+                                                a(class="overlap-btn", data-toggle="modal", data-target="#carOverviewModal")
+                                                    i(class="fa fa-eye-slash")
+                                                a(class="overlap-btn wishlist-btn")
+                                                    i(class="fa fa-heart-o")
+                                                a(class="overlap-btn compare-btn")
+                                                    i(class="fa fa-balance-scale")
+                                                div(class="car-magnify-gallery")
+                                                    a(href="../assets/img/car/car-5.jpg", class="overlap-btn", data-sub-html="<h4>Porsche Cayen Last</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        i(class="fa fa-expand")
+                                                        img(class="hidden", src="../assets/img/car/car-5.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-2.jpg", class="hidden", data-sub-html="<h4>Ferrari Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-2.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-3.jpg", class="hidden", data-sub-html="<h4>Bmw e46 m3 Diski Serie</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-3.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-4.jpg", class="hidden", data-sub-html="<h4>Volkswagen Scirocco 2016</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-4.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-1.jpg", class="hidden", data-sub-html="<h4>Lamborghini</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-1.jpg", alt="hidden-img")
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="car-details.html") Porsche Cayen Last
+                                    ul(class="custom-list")
+                                        li
+                                            a(href="#") جديدة
+                                            | /
+                                        li
+                                            a(href="#") اوتوماتيك
+                                            | /
+                                        li
+                                            a(href="#") رياضية
+                                    ul(class="facilities-list clearfix")
+                                        li
+                                            i(class="flaticon-fuel")
+                                            | بترول
+                                        li
+                                            i(class="flaticon-way")
+                                            | 4,000 km
+                                        li
+                                            i(class="flaticon-manual-transmission")
+                                            | يدوي
+                                        li
+                                            i(class="flaticon-car")
+                                            | رياضية
+                                        li
+                                            i(class="flaticon-gear")
+                                            | ازرق
+                                        li
+                                            i(class="flaticon-calendar-1")
+                                            | 2019
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 مراجعات)
+                                    ul(class="pull-right icon")
+                                        li
+                                            a(href="#")
+                                                i(class="fa fa-heart-o")
+                                        li
+                                            a(href="#")
+                                                i(class="fa fa-share-square-o")
+                        div(class="col-lg-4 col-md-6")
+                            div(class="car-box-3")
+                                div(class="car-thumbnail")
+                                    a(href="car-details.html", class="car-img")
+                                        div(class="tag-2 bg-active") مفضلة
+                                        div(class="price-box")
+                                            span(class="del")
+                                                del ريال 830.00
+                                            br
+                                            span ريال 940.00
+                                        img(class="d-block w-100", src="../assets/img/car/car-6.jpg", alt="car")
+                                    div(class="carbox-overlap-wrapper")
+                                        div(class="overlap-box")
+                                            div(class="overlap-btns-area")
+                                                a(class="overlap-btn", data-toggle="modal", data-target="#carOverviewModal")
+                                                    i(class="fa fa-eye-slash")
+                                                a(class="overlap-btn wishlist-btn")
+                                                    i(class="fa fa-heart-o")
+                                                a(class="overlap-btn compare-btn")
+                                                    i(class="fa fa-balance-scale")
+                                                div(class="car-magnify-gallery")
+                                                    a(href="../assets/img/car/car-6.jpg", class="overlap-btn", data-sub-html="<h4>Lexus GS F</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        i(class="fa fa-expand")
+                                                        img(class="hidden", src="../assets/img/car/car-6.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-2.jpg", class="hidden", data-sub-html="<h4>Ferrari Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-2.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-3.jpg", class="hidden", data-sub-html="<h4>Bmw e46 m3 Diski Serie</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-3.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-4.jpg", class="hidden", data-sub-html="<h4>Volkswagen Scirocco 2016</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-4.jpg", alt="hidden-img")
+                                                    a(href="../assets/img/car/car-1.jpg", class="hidden", data-sub-html="<h4>Lamborghini</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                        img(class="hidden", src="../assets/img/car/car-1.jpg", alt="hidden-img")
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="car-details.html") Lexus GS F
+                                    ul(class="custom-list")
+                                        li
+                                            a(href="#") جديدة
+                                            | /
+                                        li
+                                            a(href="#") اوتوماتيك
+                                            | /
+                                        li
+                                            a(href="#") رياضية
+                                    ul(class="facilities-list clearfix")
+                                        li
+                                            i(class="flaticon-fuel")
+                                            | بترول
+                                        li
+                                            i(class="flaticon-way")
+                                            | 4,000 km
+                                        li
+                                            i(class="flaticon-manual-transmission")
+                                            | يدوي
+                                        li
+                                            i(class="flaticon-car")
+                                            | رياضية
+                                        li
+                                            i(class="flaticon-gear")
+                                            | ازرق
+                                        li
+                                            i(class="flaticon-calendar-1")
+                                            | 2019
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 مراجعات)
+                                    ul(class="pull-right icon")
+                                        li
+                                            a(href="#")
+                                                i(class="fa fa-heart-o")
+                                        li
+                                            a(href="#")
+                                                i(class="fa fa-share-square-o")
+
+            // Service section start
+            div(class="service-section content-area-2")
+                div(class="container")
+                    // Main title
+                    div(class="main-title text-center")
+                        h1 نحن الافضل
+                        p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                    div(class="row")
+                        div(class="col-lg-3 col-md-6 col-sm-12")
+                            div(class="service-info-2")
+                                div(class="icon")
+                                    i(class="flaticon-shield")
+                                h3 امان جدا 
+                                p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                a(href="services.html", class="read-more")
+                                    | قراءة المزيد 
+                        div(class="col-lg-3 col-md-6 col-sm-12")
+                            div(class="service-info-2")
+                                div(class="icon")
+                                    i(class="flaticon-deal")
+                                h3 ثقة العملاء
+                                p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                a(href="services.html", class="read-more")
+                                    | قراءة المزيد
+                        div(class="col-lg-3 col-md-6 col-sm-12")
+                            div(class="service-info-2")
+                                div(class="icon")
+                                    i(class="flaticon-money")
+                                h3 عروض ممتازة
+                                p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                a(href="services.html", class="read-more")
+                                    | قراءة المزيد
+                        div(class="col-lg-3 col-md-6 col-sm-12")
+                            div(class="service-info-2")
+                                div(class="icon")
+                                    i(class="flaticon-support-2")
+                                h3 دعم مجاني
+                                p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                a(href="services.html", class="read-more")
+                                    | قراءة المزيد
+                        div(class="col-lg-12 text-center")
+                            a(href="services.html", class="btn-5") قراءة المزيد
+            // Service section end
+
+            // Latest offers section strat
+            div(class="latest-offers-section content-area-7")
+                div(class="container")
+                    // Main title
+                    div(class="main-title text-center")
+                        h1 اخر العروض
+                        p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                    div(class="row")
+                        div(class="col-lg-7 col-md-12 col-sm-12")
+                            div(class="row")
+                                div(class="col-md-12 col-sm-12 col-pad")
+                                    div(class="latest-offers-box")
+                                        div(class="latest-offers-box-inner")
+                                            div(class="latest-offers-box-overflow")
+                                                div(class="latest-offers-box-photo")
+                                                    img(class="img-fluid", src="../assets/img/latest-offers/img-1.jpg", alt="latest-offers")
+                                                div(class="info")
+                                                    div(class="price-box-2")
+                                                        sup ريال 
+                                                        | 650
+                                                        span /الشهر
+                                                    h3
+                                                        a(href="car-details.html") Toyota Prius
+                                                div(class="new") جديد
+                                div(class="col-md-6 col-sm-12 col-pad")
+                                    div(class="latest-offers-box")
+                                        div(class="latest-offers-box-inner")
+                                            div(class="latest-offers-box-overflow")
+                                                div(class="latest-offers-box-photo")
+                                                    img(class="img-fluid", src="../assets/img/latest-offers/img-2.jpg", alt="latest-offers")
+                                                div(class="info")
+                                                    div(class="price-box-2")
+                                                        sup ريال 
+                                                        | 740
+                                                        span /الشهر
+                                                    h3
+                                                        a(href="car-details.html") Lamborghini Huracan
+                                                div(class="new") جديد
+                                div(class="col-md-6 col-sm-12 col-pad")
+                                    div(class="latest-offers-box")
+                                        div(class="latest-offers-box-inner")
+                                            div(class="latest-offers-box-overflow")
+                                                div(class="latest-offers-box-photo")
+                                                    img(class="img-fluid", src="../assets/img/latest-offers/img-3.jpg", alt="latest-offers")
+                                                div(class="info")
+                                                    div(class="price-box-2")
+                                                        sup ريال 
+                                                        | 950
+                                                        span /الشهر
+                                                    h3(class="category-title")
+                                                        a(href="car-details.html") Lamborghini
+                                                div(class="new") جديد
+                        div(class="col-lg-5 col-md-12 col-sm-12 col-pad")
+                            div(class="latest-offers-box")
+                                div(class="latest-offers-box-inner")
+                                    div(class="latest-offers-box-overflow")
+                                        div(class="latest-offers-box-photo")
+                                            div(class="latest-offers-box-photodd")
+                                                img(class="img-fluid big-img", src="../assets/img/latest-offers/img-4.jpg", alt="latest-offers")
+                                        div(class="info")
+                                            div(class="price-box-2")
+                                                sup ريال 
+                                                | 480
+                                                span /الشهر
+                                            h3(class="category-title")
+                                                a(href="car-details.html") Red ferrari Car 2018
+                                        div(class="new") جديد
+            // Latest offers section end
+            // Counters strat
+            div(class="counters-1")
+                div(class="container")
+                    div(class="row")
+                        div(class="col-lg-3 col-md-6 col-sm-6")
+                            div(class="counter-box-1")
+                                i(class="flaticon-car")
+                                h1(class="counter") 967
+                                h5 الاجمالي 
+                                    span السيارات
+                        div(class="col-lg-3 col-md-6 col-sm-6")
+                            div(class="counter-box-1")
+                                i(class="flaticon-blog")
+                                h1(class="counter") 1276
+                                h5 ايجابية 
+                                    span مراجعات
+                        div(class="col-lg-3 col-md-6 col-sm-6")
+                            div(class="counter-box-1")
+                                i(class="flaticon-user")
+                                h1(class="counter") 396
+                                h5 سعداء 
+                                    span عملاء
+                        div(class="col-lg-3 col-md-6 col-sm-6")
+                            div(class="counter-box-1")
+                                i(class="flaticon-medal")
+                                h1(class="counter") 177
+                                h5  جوائز  
+                                    span انجازات
+            // Counters end
+            // Our team start
+            div(class="our-team content-area")
+                div(class="container")
+                    // Main title
+                    div(class="main-title")
+                        h1 عملائنا
+                        p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                    // Slick slider area start
+                    div(class="slick-slider-area clearfix")
+                        div(class="row slick-carousel", dir="ltr", data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}')
+                            div(class="slick-slide-item")
+                                div(class="team-3")
+                                    div(class="team-thumb")
+                                        a(href="#")
+                                            img(src="../assets/img/avatar/avatar-11.jpg", alt="agent-2", class="img-fluid")
+                                        div(class="team-social flex-middle")
+                                            div(class="team-overlay")
+                                            div(class="team-social-inner")
+                                                a(rel="nofollow", href="#", class="facebook")
+                                                    i(class="fa fa-facebook", aria-hidden="true")
+                                                a(rel="nofollow", href="#", class="twitter")
+                                                    i(class="fa fa-twitter", aria-hidden="true")
+                                                a(rel="nofollow", href="#", class="google")
+                                                    i(class="fa fa-google", aria-hidden="true")
+                                                a(rel="nofollow", href="#", class="linkedin")
+                                                    i(class="fa fa-linkedin", aria-hidden="true")
+                                    div(class="team-info")
+                                        h4
+                                            a(href="agent-detail.html") توفيق محمد
+                                        h5 مدير مشروعات
+                                        h6 +1 204 777 0187
+                            div(class="slick-slide-item")
+                                div(class="team-3")
+                                    div(class="team-thumb")
+                                        a(href="#")
+                                            img(src="../assets/img/avatar/avatar-9.jpg", alt="team-3", class="img-fluid")
+                                        div(class="team-social flex-middle")
+                                            div(class="team-overlay")
+                                            div(class="team-social-inner")
+                                                a(rel="nofollow", href="#", class="facebook")
+                                                    i(class="fa fa-facebook", aria-hidden="true")
+                                                a(rel="nofollow", href="#", class="twitter")
+                                                    i(class="fa fa-twitter", aria-hidden="true")
+                                                a(rel="nofollow", href="#", class="google")
+                                                    i(class="fa fa-google", aria-hidden="true")
+                                                a(rel="nofollow", href="#", class="linkedin")
+                                                    i(class="fa fa-linkedin", aria-hidden="true")
+                                    div(class="team-info")
+                                        h4
+                                            a(href="agent-detail.html") نادر السيد
+                                        h5 مدير تنفيذي
+                                        h6 +1 204 777 0187
+                            div(class="slick-slide-item")
+                                div(class="team-3")
+                                    div(class="team-thumb")
+                                        a(href="#")
+                                            img(src="../assets/img/avatar/avatar-11.jpg", alt="team-3", class="img-fluid")
+                                        div(class="team-social flex-middle")
+                                            div(class="team-overlay")
+                                            div(class="team-social-inner")
+                                                a(rel="nofollow", href="#", class="facebook")
+                                                    i(class="fa fa-facebook", aria-hidden="true")
+                                                a(rel="nofollow", href="#", class="twitter")
+                                                    i(class="fa fa-twitter", aria-hidden="true")
+                                                a(rel="nofollow", href="#", class="google")
+                                                    i(class="fa fa-google", aria-hidden="true")
+                                                a(rel="nofollow", href="#", class="linkedin")
+                                                    i(class="fa fa-linkedin", aria-hidden="true")
+                                    div(class="team-info")
+                                        h4
+                                            a(href="agent-detail.html")  جمال القنيني 
+                                        h5 مراجعة عامة 
+                                        h6 +1 204 777 0187
+                            div(class="slick-slide-item")
+                                div(class="team-3")
+                                    div(class="team-thumb")
+                                        a(href="#")
+                                            img(src="../assets/img/avatar/avatar-12.jpg", alt="team-3", class="img-fluid")
+                                        div(class="team-social flex-middle")
+                                            div(class="team-overlay")
+                                            div(class="team-social-inner")
+                                                a(rel="nofollow", href="#", class="facebook")
+                                                    i(class="fa fa-facebook", aria-hidden="true")
+                                                a(rel="nofollow", href="#", class="twitter")
+                                                    i(class="fa fa-twitter", aria-hidden="true")
+                                                a(rel="nofollow", href="#", class="google")
+                                                    i(class="fa fa-google", aria-hidden="true")
+                                                a(rel="nofollow", href="#", class="linkedin")
+                                                    i(class="fa fa-linkedin", aria-hidden="true")
+                                    div(class="team-info")
+                                        h4
+                                            a(href="agent-detail.html") منال الدوسري 
+                                        h5 مدير شركة
+                                        h6 +1 204 777 0187
+            // Our team end
+            // Testimonial 3 start
+            div(class="testimonial-3")
+                div(class="container")
+                    div(class="row")
+                        div(class="col-lg-12")
+                            // Main title
+                            div(class="main-title")
+                                h1 اراء العملاء
+                                p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ.
+                        div(class="col-lg-12")
+                            // Slick slider area start
+                            div(class="slick-slider-area")
+                                div(class="row slick-carousel", dir="ltr", data-slick='{"slidesToShow": 2, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 1}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}')
+                                    div(class="slick-slide-item")
+                                        div(class="testimonial-item-new")
+                                            div(class="author-img fix")
+                                                div(class="author-avatar")
+                                                    img(src="../assets/img/avatar/avatar-1.jpg", alt="testimonial-5")
+                                                    div(class="icon")
+                                                        i(class="fa fa-quote-right")
+                                            div(class="author-content")
+                                                h5(class="left-line pl-40") ماهر نظمي, 
+                                                    span(class="desig") مدير
+                                            p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ.هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ.
+                                            div(class="rating")
+                                                i(class="fa fa-star")
+                                                i(class="fa fa-star")
+                                                i(class="fa fa-star")
+                                                i(class="fa fa-star")
+                                                i(class="fa fa-star-half-full")
+                                    div(class="slick-slide-item")
+                                        div(class="testimonial-item-new")
+                                            div(class="author-img fix")
+                                                div(class="author-avatar")
+                                                    img(src="../assets/img/avatar/avatar-1.jpg", alt="testimonial-5")
+                                                    div(class="icon")
+                                                        i(class="fa fa-quote-right")
+                                            div(class="author-content")
+                                                h5(class="left-line pl-40") ماهر نظمي, 
+                                                    span(class="desig") مدير
+                                            p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ.هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ.
+                                            div(class="rating")
+                                                i(class="fa fa-star")
+                                                i(class="fa fa-star")
+                                                i(class="fa fa-star")
+                                                i(class="fa fa-star")
+                                                i(class="fa fa-star-half-full")
+                                    div(class="slick-slide-item")
+                                        div(class="testimonial-item-new")
+                                            div(class="author-img fix")
+                                                div(class="author-avatar")
+                                                    img(src="../assets/img/avatar/avatar-3.jpg", alt="testimonial-5")
+                                                    div(class="icon")
+                                                        i(class="fa fa-quote-right")
+                                            div(class="author-content")
+                                                h5(class="left-line pl-40") ماهر نظمي, 
+                                                    span(class="desig") مدير
+                                            p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ.هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ.
+                                            div(class="rating")
+                                                i(class="fa fa-star")
+                                                i(class="fa fa-star")
+                                                i(class="fa fa-star")
+                                                i(class="fa fa-star")
+                                                i(class="fa fa-star-half-full")
+            // Testimonial 3 end
+            // Blog start
+            div(class="blog content-area")
+                div(class="container")
+                    // Main title
+                    div(class="main-title")
+                        h1 اخبارنا
+                        p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
+                    // Slick slider area start
+                    div(class="slick-slider-area")
+                        div(class="row slick-carousel",dir="ltr", data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}')
+                            div(class="slick-slide-item")
+                                div(class="blog-3")
+                                    div(class="blog-image")
+                                        img(src="../assets/img/car/car-1.jpg", alt="blog", class="img-fluid bp")
+                                        div(class="date-box-2 db-2") 14 اكتوبر
+                                        div(class="post-meta clearfix")
+                                            span
+                                                a(href="#")
+                                                    i(class="flaticon-user-1")
+                                                | المشرف
+                                            span
+                                                a(href="#")
+                                                    i(class="flaticon-comment")
+                                                | 17K
+                                            span
+                                                a(href="#")
+                                                    i(class="flaticon-calendar")
+                                                | 73k
+                                    div(class="detail")
+                                        h3
+                                            a(href="#") قم بشراء افضل سيارة رياضية
+                                        p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء&apos;s
+                                        a(href="#", class="b-btn") قراءة المزيد...!
+                            div(class="slick-slide-item")
+                                div(class="blog-3")
+                                    div(class="blog-image")
+                                        img(src="../assets/img/car/car-1.jpg", alt="blog-3", class="img-fluid bp")
+                                        div(class="date-box-2 db-2") 27 Nov
+                                        div(class="post-meta clearfix")
+                                            span
+                                                a(href="#")
+                                                    i(class="flaticon-user-1")
+                                                | المشرف
+                                            span
+                                                a(href="#")
+                                                    i(class="flaticon-comment")
+                                                | 17K
+                                            span
+                                                a(href="#")
+                                                    i(class="flaticon-calendar")
+                                                | 73k
+                                    div(class="detail")
+                                        h3
+                                            a(href="#") Selling Your جديد Cars?
+                                        p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء&apos;s
+                                        a(href="#", class="b-btn") قراءة المزيد...!
+                            div(class="slick-slide-item")
+                                div(class="blog-3")
+                                    div(class="blog-image")
+                                        img(src="../assets/img/car/car-1.jpg", alt="blog-3", class="img-fluid bp")
+                                        div(class="date-box-2 db-2") 09 سبتمبر
+                                        div(class="post-meta clearfix")
+                                            span
+                                                a(href="#")
+                                                    i(class="flaticon-user-1")
+                                                | المشرف
+                                            span
+                                                a(href="#")
+                                                    i(class="flaticon-comment")
+                                                | 17K
+                                            span
+                                                a(href="#")
+                                                    i(class="flaticon-calendar")
+                                                | 73k
+                                    div(class="detail")
+                                        h3
+                                            a(href="#") اشتري سياراتك 
+                                        p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء&apos;s
+                                        a(href="#", class="b-btn") قراءة المزيد...!
+                            div(class="slick-slide-item")
+                                div(class="blog-3")
+                                    div(class="blog-image")
+                                        img(src="../assets/img/car/car-1.jpg", alt="blog-3", class="img-fluid bp")
+                                        div(class="date-box-2 db-2") 08 نوفمبر
+                                        div(class="post-meta clearfix")
+                                            span
+                                                a(href="#")
+                                                    i(class="flaticon-user-1")
+                                                | المشرف
+                                            span
+                                                a(href="#")
+                                                    i(class="flaticon-comment")
+                                                | 17K
+                                            span
+                                                a(href="#")
+                                                    i(class="flaticon-calendar")
+                                                | 73k
+                                    div(class="detail")
+                                        h3
+                                            a(href="#") اشتري سياراتك 
+                                        p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء&apos;s
+                                        a(href="#", class="b-btn") قراءة المزيد...!
+            // Blog end
+            // Partners strat
+            div(class="partners")
+                div(class="container")
+                    div(class="slick-slider-area")
+                        div(class="row slick-carousel",dir="ltr", data-slick='{"slidesToShow": 5, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 3}}, {"breakpoint": 768,"settings":{"slidesToShow": 2}}]}')
+                            div(class="slick-slide-item")
+                                img(src="../assets/img/brand/brand-1.png", alt="brand", class="img-fluid")
+                            div(class="slick-slide-item")
+                                img(src="../assets/img/brand/brand-2.png", alt="brand", class="img-fluid")
+                            div(class="slick-slide-item")
+                                img(src="../assets/img/brand/brand-3.png", alt="brand", class="img-fluid")
+                            div(class="slick-slide-item")
+                                img(src="../assets/img/brand/brand-4.png", alt="brand", class="img-fluid")
+                            div(class="slick-slide-item")
+                                img(src="../assets/img/brand/brand-1.png", alt="brand", class="img-fluid")
+                            div(class="slick-slide-item")
+                                img(src="../assets/img/brand/brand-2.png", alt="brand", class="img-fluid")
+                            div(class="slick-slide-item")
+                                img(src="../assets/img/brand/brand-3.png", alt="brand", class="img-fluid")
+                            div(class="slick-slide-item")
+                                img(src="../assets/img/brand/brand-4.png", alt="brand", class="img-fluid")
+            // Partners end
+
+
+
+
+    include ./include/footer
+    include ./include/script
+

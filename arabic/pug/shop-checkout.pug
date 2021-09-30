@@ -1,0 +1,115 @@
+extend index
+block website_title 
+    title  الدفع 
+block index
+    div(class="sub-banner")
+        div(class="container breadcrumb-area")
+            div(class="breadcrumb-areas")
+                h1 الدفع
+                ul(class="breadcrumbs")
+                    li
+                        a(href="index.html") Home
+                    li(class="active") الدفع
+    div(class="shop-checkout content-area-5")
+        div(class="container")
+            div(class="from-checkout")
+                div(class="row")
+                    div(class="col-lg-6 col-md-12")
+                        div(class="heading-4")
+                            h4 بيانات الدفع
+                        form(action="#", method="GET", enctype="multipart/form-data")
+                            div(class="row")
+                                div(class="col-md-6")
+                                    div(class="form-group")
+                                        input(type="text", class="form-control", placeholder="الاسم الاول")
+                                div(class="col-md-6")
+                                    div(class="form-group")
+                                        input(type="text", class="form-control", placeholder="الاسم الاخير")
+                            div(class="form-group")
+                                input(type="text", class="form-control", placeholder="اسم الشركة")
+                            div(class="form-group")
+                                input(type="text", class="form-control", placeholder="العنوان ")
+                            div(class="form-group")
+                                input(type="text", class="form-control", placeholder="المدينة ")
+                            div(class="form-group")
+                                input(type="text", class="form-control", placeholder="الدولة")
+                            div(class="row")
+                                div(class="col-md-6")
+                                    div(class="form-group")
+                                        input(type="text", class="form-control", placeholder="الرقم البريدي")
+                                div(class="col-md-6")
+                                    div(class="form-group")
+                                        input(type="text", class="form-control", placeholder="رقم الهاتف")
+                        br
+                    div(class="col-lg-6 col-md-12")
+                        div(class="heading-4")
+                            h4 عنوان الشحن
+                        form(action="#", method="GET", enctype="multipart/form-data")
+                        div(class="row")
+                            div(class="col-md-6")
+                                div(class="form-group")
+                                    input(type="text", class="form-control", placeholder="الاسم الاول")
+                            div(class="col-md-6")
+                                div(class="form-group")
+                                    input(type="text", class="form-control", placeholder="الاسم الاخير")
+                        div(class="form-group")
+                            input(type="text", class="form-control", placeholder="اسم الشركة")
+                        div(class="form-group")
+                            input(type="text", class="form-control", placeholder="العنوان ")
+                        div(class="form-group")
+                            input(type="text", class="form-control", placeholder="المدينة ")
+                        div(class="form-group")
+                            input(type="text", class="form-control", placeholder="الدولة")
+                        div(class="row")
+                            div(class="col-md-6")
+                                div(class="form-group")
+                                    input(type="text", class="form-control", placeholder="الرقم البريدي")
+                            div(class="col-md-6")
+                                div(class="form-group")
+                                    input(type="text", class="form-control", placeholder="رقم الهاتف")
+                        br
+                div(class="row")
+                    div(class="col-lg-6 col-md-12")
+                        div(class="our-payment")
+                            div(class="payment-box mb-40")
+                                label(class="form-check-label")
+                                    input(type="checkbox", class="form-check-input")
+                                    | تحويل بنكي
+                                p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                            div(class="payment-box mb-40")
+                                label(class="form-check-label")
+                                    input(type="checkbox", class="form-check-input")
+                                    | تحويل بنكي
+                                p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                            div(class="payment-box mb-0")
+                                label(class="form-check-label")
+                                    input(type="checkbox", class="form-check-input")
+                                    | تحويل بنكي
+                                p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                    div(class="col-lg-6 col-md-12")
+                        div(class="cart-total-box")
+                            h5 مجمموع الشامل
+                            hr
+                            ul
+                                li
+                                    | المجموع
+                                    span(class="pull-left") ريال170.00
+                                li
+                                    | رسوم الشحن
+                                    span(class="pull-left") ريال234.00
+                                li
+                                    | توصيل محلي
+                                    span(class="pull-left") ريال334
+                                li
+                                    | معدل
+                                    span(class="pull-left") ريال1234
+                                li
+                                    | دولي
+                                    span(class="pull-left") ريال652
+                            hr
+                            p(class="mar-b-50 text-right")
+                                | المجموع الكلي
+                                span(class="pull-left") ريال9531
+                            br
+                            button(class="btn btns-black btn-block btn-md", type="submit") تحديث
+                            button(class="btn  btn-block btn-md button-theme", type="submit") دفع

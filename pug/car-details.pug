@@ -1,0 +1,611 @@
+extend index
+block website_title 
+    title  Car Details 
+block index
+    div(class="sub-banner")
+        div(class="container breadcrumb-area")
+            div(class="breadcrumb-areas")
+                h1 Car Details
+                ul(class="breadcrumbs")
+                    li
+                        a(href="index.html") Home
+                    li(class="active") Car Details
+    div(class="car-details-page content-area-6")
+        div(class="container")
+            div(class="row")
+                div(class="col-lg-8 col-md-12 col-xs-12")
+                    div(class="car-details-section")
+                        // Heading start
+                        div(class="heading-car clearfix")
+                            div(class="pull-left")
+                                h3 Porsche Cayen Last
+                                h6
+                                    i(class="flaticon-pin")
+                                    | 123 Kathal St. Tampa City,
+                            div(class="pull-right")
+                                div(class="price-box-3")
+                                    sup $
+                                    | 650
+                                    span /month
+                        // carDetailsSlider start
+                        #carDetailsSlider(class="carousel car-details-sliders slide slide-2")
+                            // main slider carousel items
+                            div(class="carousel-inner")
+                                div(class="active item carousel-item", data-slide-number="0")
+                                    img(src="assets/img/car/car-5.jpg", class="img-fluid", alt="slider-car")
+                                div(class="item carousel-item", data-slide-number="1")
+                                    img(src="assets/img/car/car-2.jpg", class="img-fluid", alt="slider-car")
+                                div(class="item carousel-item", data-slide-number="2")
+                                    img(src="assets/img/car/car-3.jpg", class="img-fluid", alt="slider-car")
+                                div(class="item carousel-item", data-slide-number="4")
+                                    img(src="assets/img/car/car-1.jpg", class="img-fluid", alt="slider-car")
+                                div(class="item carousel-item", data-slide-number="5")
+                                    img(src="assets/img/car/car-4.jpg", class="img-fluid", alt="slider-car")
+                            // main slider carousel nav controls
+                            ul(class="carousel-indicators car-properties list-inline nav nav-justified")
+                                li(class="list-inline-item active")
+                                    a#carousel-selector-0(class="selected", data-slide-to="0", data-target="#carDetailsSlider")
+                                        img(src="assets/img/car/car-5.jpg", class="img-fluid", alt="small-car")
+                                li(class="list-inline-item")
+                                    a#carousel-selector-1(data-slide-to="1", data-target="#carDetailsSlider")
+                                        img(src="assets/img/car/car-2.jpg", class="img-fluid", alt="small-car")
+                                li(class="list-inline-item")
+                                    a#carousel-selector-2(data-slide-to="2", data-target="#carDetailsSlider")
+                                        img(src="assets/img/car/car-3.jpg", class="img-fluid", alt="small-car")
+                                li(class="list-inline-item")
+                                    a#carousel-selector-3(data-slide-to="3", data-target="#carDetailsSlider")
+                                        img(src="assets/img/car/car-1.jpg", class="img-fluid", alt="small-car")
+                                li(class="list-inline-item")
+                                    a#carousel-selector-4(data-slide-to="4", data-target="#carDetailsSlider")
+                                        img(src="assets/img/car/car-4.jpg", class="img-fluid", alt="small-car")
+                        // Advanced search start
+                        div(class="widget-2 advanced-search bg-grea-2 as-2")
+                            h3(class="sidebar-title") Refine Your Search
+                            div(class="s-border")
+                            div(class="m-border")
+                            ul
+                                li
+                                    span Make
+                                    | Ferrari
+                                li
+                                    span Model
+                                    | Maxima
+                                li
+                                    span Body Style
+                                    | Convertible
+                                li
+                                    span Year
+                                    | 2017
+                                li
+                                    span Condition
+                                    | Brand New
+                                li
+                                    span Mileage
+                                    | 34,000 mi
+                                li
+                                    span Interior Color
+                                    | Dark Grey
+                                li
+                                    span Transmission
+                                    | 6-speed Manual
+                                li
+                                    span Engine
+                                    | 3.4L Mid-Engine V6
+                                li
+                                    span No. of Gears:
+                                    | 5
+                                li
+                                    span Location
+                                    | Toronto
+                                li
+                                    span Fuel Type
+                                    | Gasoline Fuel
+                        // Tabbing box start
+                        div(class="tabbing tabbing-box mb-40")
+                            ul#carTab(class="nav nav-tabs", role="tablist")
+                                li(class="nav-item")
+                                    a#one-tab(class="nav-link active show", data-toggle="tab", href="#one", role="tab", aria-controls="one", aria-selected="false") Description
+                                li(class="nav-item")
+                                    a#two-tab(class="nav-link", data-toggle="tab", href="#two", role="tab", aria-controls="two", aria-selected="false") Features
+                                li(class="nav-item")
+                                    a#6-tab(class="nav-link", data-toggle="tab", href="#6", role="tab", aria-controls="6", aria-selected="true") Specifications
+                                li(class="nav-item")
+                                    a#three-tab(class="nav-link", data-toggle="tab", href="#three", role="tab", aria-controls="three", aria-selected="true") Related Car
+                                li(class="nav-item")
+                                    a#5-tab(class="nav-link", data-toggle="tab", href="#5", role="tab", aria-controls="5", aria-selected="true") Location
+                                li(class="nav-item")
+                                    a#4-tab(class="nav-link", data-toggle="tab", href="#4", role="tab", aria-controls="4", aria-selected="true") Video
+                            #carTabContent(class="tab-content")
+                                #one(class="tab-pane fade active show", role="tabpanel", aria-labelledby="one-tab")
+                                    div(class="car-description mb-50")
+                                        h3(class="heading-2")
+                                            | Description
+                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra a. Aliquam pellentesque nibh et nibh feugiat gravida. Maecenas ultricies, diam vitae semper placerat, velit risus accumsan nisl, eget tempor lacus est vel nunc. Proin accumsan elit sed neque euismod fringilla. Curabitur lobortis nunc velit, et fermentum urna dapibus non. Vivamus magna lorem, elementum id gravida ac, laoreet tristique augue. Maecenas dictum lacus eu nunc porttitor, ut hendrerit arcu efficitur.
+                                        p Aliquam ultricies nunc porta metus interdum mollis. Donec porttitor libero augue, vehicula tincidunt lectus placerat a. Sed tincidunt dolor non sem dictum dignissim. Nulla vulputate orci felis, ac ornare purus ultricies a. Fusce euismod magna orci, sit amet aliquam turpis dignissim ac. In at tortor at ligula pharetra sollicitudin. Sed tincidunt, purus eget laoreet elementum, felis est pharetra ante, tincidunt feugiat libero enim sed risus. Sed at leo sit amet mi bibendum aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent cursus varius odio, non faucibus dui. Nunc vehicula lectus sed velit suscipit aliquam vitae eu ipsum. adipiscing elit.
+                                #two(class="tab-pane fade", role="tabpanel", aria-labelledby="two-tab")
+                                    div(class="features-info mb-50")
+                                        h3(class="heading-2") Features
+                                        div(class="row")
+                                            div(class="col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                                ul
+                                                    li
+                                                        | Adaptive Cruise Control
+                                                    li
+                                                        | Airbags
+                                                    li
+                                                        | Air Conditioning
+                                                    li
+                                                        | Alarm System
+                                                    li
+                                                        | Anti-theft Protection
+                                                    li
+                                                        | Audio Interface
+                                                    li
+                                                        | Automatic Climate Control
+                                                    li
+                                                        | Automatic Headlights
+                                                    li
+                                                        | Auto Start/Stop
+                                                    li
+                                                        | Bi-Xenon Headlights
+                                                    li
+                                                        | Audio Interface
+                                                    li
+                                                        | Bluetooth Handset
+                                                    li
+                                                        | BOSE Surround Sound
+                                                    li
+                                                        | Burmester Surround Sound
+                                                    li
+                                                        | CD/DVD Autochanger
+                                            div(class="col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                                ul
+                                                    li
+                                                        | CDR Audio
+                                                    li
+                                                        | Cruise Control
+                                                    li
+                                                        | Direct Fuel Injection
+                                                    li
+                                                        | Electric Parking Brake
+                                                    li
+                                                        | Floor Mats
+                                                    li
+                                                        | Garage Door Opener
+                                                    li
+                                                        | Leather Package
+                                                    li
+                                                        | Locking Rear Differential
+                                                    li
+                                                        | Luggage Compartments
+                                                    li
+                                                        | Manual Transmission
+                                                    li
+                                                        | Navigation Module
+                                                    li
+                                                        | Online Services
+                                                    li
+                                                        | ParkAssist
+                                                    li
+                                                        | Porsche Communication
+                                                    li
+                                                        | CD/DVD Autochanger
+                                            div(class="col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                                ul
+                                                    li
+                                                        | Power Steering
+                                                    li
+                                                        | Reversing Camera
+                                                    li
+                                                        | Roll-over Protection
+                                                    li
+                                                        | Seat Heating
+                                                    li
+                                                        | Seat Ventilation
+                                                    li
+                                                        | Sound Package Plus
+                                                    li
+                                                        | Sport Chrono Package
+                                                    li
+                                                        | Steering Wheel Heating
+                                                    li
+                                                        | Tire Pressure Monitoring
+                                                    li
+                                                        | Universal Audio Interface
+                                                    li
+                                                        | Voice Control System
+                                                    li
+                                                        | Wind Deflector
+                                #three(class="tab-pane fade ", role="tabpanel", aria-labelledby="three-tab")
+                                    div(class="related-car mb-40")
+                                        h3(class="heading-2") Related Car
+                                        div(class="row")
+                                            div(class="col-md-6")
+                                                div(class="car-box-3")
+                                                    div(class="car-thumbnail")
+                                                        a(href="car-details.html", class="car-img")
+                                                            div(class="for") For Sale
+                                                            div(class="price-box")
+                                                                span(class="del")
+                                                                    del $950.00
+                                                                br
+                                                                span $1050.00
+                                                            img(class="d-block w-100", src="assets/img/car/car-1.jpg", alt="car")
+                                                        div(class="carbox-overlap-wrapper")
+                                                            div(class="overlap-box")
+                                                                div(class="overlap-btns-area")
+                                                                    a(class="overlap-btn", data-toggle="modal", data-target="#carOverviewModal")
+                                                                        i(class="fa fa-eye-slash")
+                                                                    a(class="overlap-btn wishlist-btn")
+                                                                        i(class="fa fa-heart-o")
+                                                                    a(class="overlap-btn compare-btn")
+                                                                        i(class="fa fa-balance-scale")
+                                                                    div(class="car-magnify-gallery")
+                                                                        a(href="assets/img/car/car-1.jpg", class="overlap-btn", data-sub-html="<h4>Lamborghini</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            i(class="fa fa-expand")
+                                                                            img(class="hidden", src="assets/img/car/car-1.jpg", alt="hidden-img")
+                                                                        a(href="assets/img/car/car-2.jpg", class="hidden", data-sub-html="<h4>Ferrari Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="assets/img/car/car-2.jpg", alt="hidden-img")
+                                                                        a(href="assets/img/car/car-3.jpg", class="hidden", data-sub-html="<h4>Bmw e46 m3 Diski Serie</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="assets/img/car/car-3.jpg", alt="hidden-img")
+                                                                        a(href="assets/img/car/car-4.jpg", class="hidden", data-sub-html="<h4>Volkswagen Scirocco 2016</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="assets/img/car/car-4.jpg", alt="hidden-img")
+                                                                        a(href="assets/img/car/car-5.jpg", class="hidden", data-sub-html="<h4>Porsche Cayen Last</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="assets/img/car/car-5.jpg", alt="hidden-img")
+                                                    div(class="detail")
+                                                        h1(class="title")
+                                                            a(href="car-details.html") Lamborghini
+                                                        ul(class="custom-list")
+                                                            li
+                                                                a(href="#") New Car
+                                                                | /
+                                                            li
+                                                                a(href="#") Automatic
+                                                                | /
+                                                            li
+                                                                a(href="#") Sports
+                                                        ul(class="facilities-list clearfix")
+                                                            li
+                                                                i(class="flaticon-fuel")
+                                                                | Petrol
+                                                            li
+                                                                i(class="flaticon-way")
+                                                                | 4,000 km
+                                                            li
+                                                                i(class="flaticon-manual-transmission")
+                                                                | Manual
+                                                            li
+                                                                i(class="flaticon-car")
+                                                                | Sport
+                                                            li
+                                                                i(class="flaticon-gear")
+                                                                | Blue
+                                                            li
+                                                                i(class="flaticon-calendar-1")
+                                                                | 2019
+                                                    div(class="footer clearfix")
+                                                        div(class="pull-left ratings")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star-o")
+                                                            span (65 Reviews)
+                                                        ul(class="pull-right icon")
+                                                            li
+                                                                a(href="#")
+                                                                    i(class="fa fa-heart-o")
+                                                            li
+                                                                a(href="#")
+                                                                    i(class="fa fa-share-square-o")
+                                            div(class="col-md-6")
+                                                div(class="car-box-3")
+                                                    div(class="car-thumbnail")
+                                                        a(href="car-details.html", class="car-img")
+                                                            div(class="tag-2 bg-active") Featured
+                                                            div(class="price-box")
+                                                                span(class="del")
+                                                                    del $805.00
+                                                                br
+                                                                span $780.00
+                                                            img(class="d-block w-100", src="assets/img/car/car-2.jpg", alt="car")
+                                                        div(class="carbox-overlap-wrapper")
+                                                            div(class="overlap-box")
+                                                                div(class="overlap-btns-area")
+                                                                    a(class="overlap-btn", data-toggle="modal", data-target="#carOverviewModal")
+                                                                        i(class="fa fa-eye-slash")
+                                                                    a(class="overlap-btn wishlist-btn")
+                                                                        i(class="fa fa-heart-o")
+                                                                    a(class="overlap-btn compare-btn")
+                                                                        i(class="fa fa-balance-scale")
+                                                                    div(class="car-magnify-gallery")
+                                                                        a(href="assets/img/car/car-2.jpg", class="overlap-btn", data-sub-html="<h4>Ferrari Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            i(class="fa fa-expand")
+                                                                            img(class="hidden", src="assets/img/car/car-2.jpg", alt="hidden-img")
+                                                                        a(href="assets/img/car/car-1.jpg", class="hidden", data-sub-html="<h4>Ferrari Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="assets/img/car/car-1.jpg", alt="hidden-img")
+                                                                        a(href="assets/img/car/car-3.jpg", class="hidden", data-sub-html="<h4>Bmw e46 m3 Diski Serie</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="assets/img/car/car-3.jpg", alt="hidden-img")
+                                                                        a(href="assets/img/car/car-4.jpg", class="hidden", data-sub-html="<h4>Volkswagen Scirocco 2016</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="assets/img/car/car-4.jpg", alt="hidden-img")
+                                                                        a(href="assets/img/car/car-5.jpg", class="hidden", data-sub-html="<h4>Porsche Cayen Last</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="assets/img/car/car-5.jpg", alt="hidden-img")
+                                                    div(class="detail")
+                                                        h1(class="title")
+                                                            a(href="car-details.html") Ferrari Red Car
+                                                        ul(class="custom-list")
+                                                            li
+                                                                a(href="#") New Car
+                                                                | /
+                                                            li
+                                                                a(href="#") Automatic
+                                                                | /
+                                                            li
+                                                                a(href="#") Sports
+                                                        ul(class="facilities-list clearfix")
+                                                            li
+                                                                i(class="flaticon-fuel")
+                                                                | Petrol
+                                                            li
+                                                                i(class="flaticon-way")
+                                                                | 4,000 km
+                                                            li
+                                                                i(class="flaticon-manual-transmission")
+                                                                | Manual
+                                                            li
+                                                                i(class="flaticon-car")
+                                                                | Sport
+                                                            li
+                                                                i(class="flaticon-gear")
+                                                                | Blue
+                                                            li
+                                                                i(class="flaticon-calendar-1")
+                                                                | 2019
+                                                    div(class="footer clearfix")
+                                                        div(class="pull-left ratings")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star-o")
+                                                            span (65 Reviews)
+                                                        ul(class="pull-right icon")
+                                                            li
+                                                                a(href="#")
+                                                                    i(class="fa fa-heart-o")
+                                                            li
+                                                                a(href="#")
+                                                                    i(class="fa fa-share-square-o")
+                                #6(class="tab-pane fade ", role="tabpanel", aria-labelledby="6-tab")
+                                    div(class="car-amenities mb-30")
+                                        h3(class="heading-2") Specifications
+                                        div(class="row")
+                                            div(class="col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                                ul(class="amenities")
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Top Speed: 270
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Fuel Type: Diesel
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Mileage: 35,200 KM
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Engine: 2901
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Gear: 4
+                                            div(class="col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                                ul(class="amenities")
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Drive Train: Front Wheel
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Body Style: Sedan
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Year:2019
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Fuel Type: Diesel
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Interior Color: White
+                                            div(class="col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                                ul(class="amenities")
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Doors: 4
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Horse Power: 310
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Location: Florisa, USA
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Interior Color: Black
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Security
+                                #5(class="tab-pane fade ", role="tabpanel", aria-labelledby="5-tab")
+                                    div(class="location mb-50")
+                                        div(class="map")
+                                            h3(class="heading-2") Location
+                                            #map(class="contact-map")
+                                #4(class="tab-pane fade ", role="tabpanel", aria-labelledby="4-tab")
+                                    div(class="inside-car mb-50")
+                                        h3(class="heading-2")
+                                            | Video
+                                        iframe(src="https://www.youtube.com/embed/V7IrnC9MISU", allowfullscreen="")
+                        // Heading 2
+                        h3(class="heading-2") Comments Section
+                        // Comments start
+                        ul(class="comments")
+                            li
+                                div(class="comment")
+                                    div(class="comment-author")
+                                        a(href="#")
+                                            img(src="assets/img/avatar/avatar-11.jpg", alt="comments-user")
+                                    div(class="comment-content")
+                                        div(class="comment-meta")
+                                            h6
+                                                | Maikel Alisa
+                                                span(class="float-right") 11/28/2019
+                                                    a(href="#") Reply
+                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim  sem vulputate interdum et vel eros.
+                                ul
+                                    li
+                                        div(class="comment")
+                                            div(class="comment-author")
+                                                a(href="#")
+                                                    img(src="assets/img/avatar/avatar-12.jpg", alt="comments-user")
+                                            div(class="comment-content")
+                                                div(class="comment-meta")
+                                                    h6
+                                                        | Carolyn Stone
+                                                        span(class="float-right") 11/28/2019
+                                                            a(href="#") Reply
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et.
+                            li
+                                div(class="comment")
+                                    div(class="comment-author")
+                                        a(href="#")
+                                            img(src="assets/img/avatar/avatar-12.jpg", alt="comments-user")
+                                    div(class="comment-content")
+                                        div(class="comment-meta")
+                                            h6
+                                                | Brandon Miller
+                                                span(class="float-right") 11/28/2019
+                                                    a(href="#") Reply
+                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim.
+                                ul
+                                    li
+                                        div(class="comment mb-50")
+                                            div(class="comment-author")
+                                                a(href="#")
+                                                    img(src="assets/img/avatar/avatar-9.jpg", alt="comments-user")
+                                            div(class="comment-content b-none")
+                                                div(class="comment-meta")
+                                                    h6
+                                                        | Michelle Nelson
+                                                        span(class="float-right") 11/28/2019
+                                                            a(href="#") Reply
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim.
+                        // Contact 2 start
+                        div(class="contact-2 ca mb-50")
+                            h3(class="heading-2") Contact Form
+                            form(action="#", method="GET", enctype="multipart/form-data")
+                                div(class="row")
+                                    div(class="form-group name col-md-6")
+                                        input(type="text", name="name", class="form-control", placeholder="Name")
+                                    div(class="form-group email col-md-6")
+                                        input(type="email", name="email", class="form-control", placeholder="Email")
+                                    div(class="form-group number col-md-6")
+                                        input(type="text", name="phone", class="form-control", placeholder="Number")
+                                    div(class="form-group number col-md-6")
+                                        input(type="text", name="subject", class="form-control", placeholder="Subject")
+                                    div(class="form-group message col-md-12")
+                                        textarea(class="form-control", name="message", placeholder="Write message")
+                                    div(class="send-btn col-md-12")
+                                        button(type="submit", class="btn btn-5") Send Message
+                div(class="col-lg-4 col-md-12")
+                    div(class="sidebar-right")
+                        // Advanced search start
+                        div(class="widget advanced-search d-none-992")
+                            h3(class="sidebar-title") Refine Your Search
+                            div(class="s-border")
+                            div(class="m-border")
+                            ul
+                                li
+                                    span Make
+                                    | Ferrari
+                                li
+                                    span Model
+                                    | Maxima
+                                li
+                                    span Body Style
+                                    | Convertible
+                                li
+                                    span Year
+                                    | 2017
+                                li
+                                    span Condition
+                                    | Brand New
+                                li
+                                    span Mileage
+                                    | 34,000 mi
+                                li
+                                    span Interior Color
+                                    | Dark Grey
+                                li
+                                    span Transmission
+                                    | 6-speed Manual
+                                li
+                                    span Engine
+                                    | 3.4L Mid-Engine V6
+                                li
+                                    span No. of Gears:
+                                    | 5
+                                li
+                                    span Location
+                                    | Toronto
+                                li
+                                    span Fuel Type
+                                    | Gasoline Fuel
+                        // Question start
+                        div(class="widget question")
+                            h5(class="sidebar-title") Get a Question?
+                            div(class="s-border")
+                            div(class="m-border")
+                            ul(class="contact-info")
+                                li
+                                    i(class="flaticon-pin")
+                                    | 20/F Green Road, Dhanmondi
+                                li
+                                    i(class="flaticon-mail")
+                                    a(href="mailto:info@themevessel.com") info@themevessel.com
+                                li
+                                    i(class="flaticon-phone")
+                                    a(href="tel:+0477-85x6-552") +0477 85x6 552
+                            div(class="social-list clearfix")
+                                ul
+                                    li
+                                        a(href="#", class="facebook-bg")
+                                            i(class="fa fa-facebook")
+                                    li
+                                        a(href="#", class="twitter-bg")
+                                            i(class="fa fa-twitter")
+                                    li
+                                        a(href="#", class="google-bg")
+                                            i(class="fa fa-google-plus")
+                                    li
+                                        a(href="#", class="rss-bg")
+                                            i(class="fa fa-rss")
+                                    li
+                                        a(href="#", class="linkedin-bg")
+                                            i(class="fa fa-linkedin")
+                        // Financing calculator start
+                        div(class="contact-2 financing-calculator widget widget-3")
+                            h3(class="sidebar-title") Financing Calculator
+                            div(class="s-border")
+                            div(class="m-border")
+                            form(action="#", method="GET", enctype="multipart/form-data")
+                                div(class="form-group")
+                                    label(class="form-label") Price
+                                    input(type="text", class="form-control", placeholder="$24.400")
+                                div(class="form-group")
+                                    label(class="form-label") Interest Rate (%)
+                                    input(type="text", class="form-control", placeholder="12%")
+                                div(class="form-group")
+                                    label(class="form-label") Period In Months
+                                    input(type="text", class="form-control", placeholder="6 Months")
+                                div(class="form-group")
+                                    label(class="form-label") Down PaymenT
+                                    input(type="text", class="form-control", placeholder="$32,300")
+                                div(class="form-group mb-0")
+                                    button(type="submit", class="btn button-theme btn-md btn-block") Cauculate
+                

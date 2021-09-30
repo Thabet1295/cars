@@ -1,0 +1,120 @@
+extend index
+block website_title 
+    title  المشتريات 
+block index
+    div(class="sub-banner")
+        div(class="container breadcrumb-area")
+            div(class="breadcrumb-areas")
+                h1 المشتريات
+                ul(class="breadcrumbs")
+                    li
+                        a(href="index.html") الرئيسية
+                    li(class="active") المشتريات
+    // Shop cart start
+    div(class="shop-cart content-area-17")
+        div(class="container")
+            div(class="row")
+                div(class="col-md-12")
+                    div(class="heading-4")
+                        h4 المشتريات
+                        p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                div(class="col-lg-8")
+                    table(class="shop-table cart")
+                        thead
+                            tr
+                                th(class="product-name t-600") الاسم
+                                th(class="description t-600") الوصف
+                                th(class="product-price t-600") السعر
+                                th(class="product-quantity t-600") العدد
+                                th(class="product-subtotal t-600") الاجمالي
+                                th(class="product-remove") X
+                        tbody
+                            tr
+                                td(class="product-thumbnail")
+                                    img(src="../assets/img/car/car-1.jpg", alt="img")
+                                td(class="product-name")
+                                    a(href="#") هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                td(class="d_none") ريال58.00
+                                td
+                                    input(class="qty", type="text", value="+1")
+                                td ريال58.00
+                                td(class="product-remove")
+                                    a(href="#")
+                                        i(class="fa fa-close")
+                            tr
+                                td(class="product-thumbnail")
+                                    img(src="../assets/img/car/car-2.jpg", alt="img")
+                                td(class="product-name")
+                                    a(href="#") هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                td(class="d_none") ريال58.00
+                                td
+                                    input(class="qty", type="text", value="+1")
+                                td ريال58.00
+                                td(class="product-remove")
+                                    a(href="#")
+                                        i(class="fa fa-close")
+                            tr
+                                td(class="product-thumbnail")
+                                    img(src="../assets/img/car/car-3.jpg", alt="img")
+                                td(class="product-name")
+                                    a(href="#") هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                td(class="d_none") ريال58.00
+                                td
+                                    input(class="qty", type="text", value="+1")
+                                td ريال58.00
+                                td(class="product-remove")
+                                    a(href="#")
+                                        i(class="fa fa-close")
+                            tr
+                                td(class="product-thumbnail")
+                                    img(src="../assets/img/car/car-4.jpg", alt="img")
+                                td(class="product-name")
+                                    a(href="#") هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                td(class="d_none") ريال58.00
+                                td
+                                    input(class="qty", type="text", value="+1")
+                                td ريال58.00
+                                td(class="product-remove")
+                                    a(href="#")
+                                        i(class="fa fa-close")
+                            tr
+                                td(class="product-thumbnail")
+                                    img(src="../assets/img/car/car-5.jpg", alt="img")
+                                td(class="product-name")
+                                    a(href="#") هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                td(class="d_none") ريال58.00
+                                td
+                                    input(class="qty", type="text", value="+1")
+                                td ريال58.00
+                                td(class="product-remove")
+                                    a(href="#")
+                                        i(class="fa fa-close")
+                div(class="col-lg-4")
+                    div(class="cart-total-box")
+                        h5 المجموع
+                        hr
+                        ul
+                            li
+                                | المجموع 
+                                span(class="pull-right") $170.00
+                            li
+                                | رسوم الشحن
+                                span(class="pull-right") $234.00
+                            li
+                                | توصيل محلي
+                                span(class="pull-right") $334
+                            li
+                                | معدل
+                                span(class="pull-right") $1234
+                            li
+                                | دولي
+                                span(class="pull-right") $652
+                        hr
+                        p(class="mar-b-50")
+                            | المبلغ الإجمالي
+                            span(class="pull-right") $9531
+                        br
+                        button(class="btn btns-black btn-block btn-md", type="submit") تحديث
+                        button(class="btn  btn-block btn-md button-theme", type="submit") الدفع
+    // Shop cart end
+                    
